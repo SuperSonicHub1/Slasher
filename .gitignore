@@ -2,3 +2,4 @@ __pycache__/
 .breakpoints
 *.mlt
 *.ff
+dist/

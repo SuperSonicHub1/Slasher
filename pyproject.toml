@@ -1,12 +1,27 @@
 [tool.poetry]
-name = "jumpcutter"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+name = "slasher"
+version = "2021.07.14"
+description = "A commmand-line tool and Python library for autonomous editing of livestreams via live chat activity."
+authors = ["Kyle Williams <kyle.anthony.williams2@gmail.com>"]
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/SuperSonicHub1/Slasher"
+repository = "https://github.com/SuperSonicHub1/Slasher"
+documentation = "https://github.com/SuperSonicHub1/Slasher"
+classifiers = [
+    "Topic :: Multimedia :: Video"
+]
+exclude = [
+    "TODO.md",
+    "slasher.bash"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/SuperSonicHub1/Slasher/issues"
 
 [tool.poetry.dependencies]
-python = "^3.8"
-chat-downloader = "^0.1.3"
+python = ">=3.7"
+chat-downloader = "0.1.3"
 
 [tool.poetry.dev-dependencies]
 
