@@ -25,6 +25,7 @@ parser.add_argument("--duration", type=str, default=None, help="how long an inte
 parser.add_argument("--delay", type=str, default=None, help="how far back messages should be pushed back, used to sync chat with stream, uses Python's timedelta syntax (default: zero seconds)")
 parser.add_argument("--start", type=str, default=None, help="capture messages from this time, uses Python's timedelta syntax (default: zero seconds)")
 parser.add_argument("--end", type=str, default=None, help="capture messages to this time, uses Python's timedelta syntax (default: timedelta.max)")
+parser.add_argument('--resource', "-r", help="The name of your resource, only works with `-f mlt` (default: 'vod.mp4')", type=str, default="vod.mp4")
 
 # Sub-commands
 subparsers = parser.add_subparsers(dest='subparser')
@@ -61,7 +62,7 @@ elif args.subparser == "top":
 
 if args.format == "mlt":
     with args.output as f:
-	    s.to_mlt(f)
+	    s.to_mlt(f, resource=args.resource)
 elif args.format == "ffmpeg":
     with args.output as f:
 	    s.to_ffmpeg_filter_complex(f)
