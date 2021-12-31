@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "slasher"
+name = "stream-slasher"
 version = "2021.07.14"
 description = "A commmand-line tool and Python library for autonomous editing of livestreams via live chat activity."
 authors = ["Kyle Williams <kyle.anthony.williams2@gmail.com>"]
@@ -14,6 +14,9 @@ classifiers = [
 exclude = [
     "TODO.md",
     "slasher.bash"
+]
+packages = [
+	{include = "slasher"}
 ]
 
 [tool.poetry.urls]

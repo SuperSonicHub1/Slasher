@@ -22,7 +22,12 @@ highlight half an hour after your livestream ends to get those sweet views? Be m
 The possibilites with my tool should be quite endless, so go crazy!
 
 ## Installation
-As a developer, clone the project and run `poetry install`. Instructions for normal users coming soon!
+Look to `pip` for what you desire:
+```
+pip install video-slasher
+```
+
+As a developer, clone the project and run `poetry install`.
 
 ## Usage
 
